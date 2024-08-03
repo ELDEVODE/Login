@@ -18,7 +18,7 @@ actor Login {
     };
   };
 
-  // public query func greet(name : Text) : async Text {
-  //   return "Hello, " # name # "!";
-  // };
+  public query func getDetails() : async (Text, Text) {
+    return ("The username is : " # username # " ", "The password is : " # password # " ");
+  };
 };
